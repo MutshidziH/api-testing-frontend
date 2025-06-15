@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Testing Tool - Mutshidzi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>API Endpoint Tester</h1>
+        <p>Test API endpoints using the validation service</p>
+        
+        <form id="testForm">
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required 
+                       placeholder="your.email@example.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="apiUrl">API Endpoint URL:</label>
+                <input type="url" id="apiUrl" name="apiUrl" required 
+                       placeholder="https://your-api-endpoint.vercel.app/api/sort-string">
+            </div>
+            
+            <button type="submit" id="testButton">Test API Endpoint</button>
+        </form>
+        
+        <div id="loading" class="loading hidden">Testing your API...</div>
+        
+        <div id="results" class="results hidden">
+            <h3>Test Results:</h3>
+            <div id="responseContent"></div>
+        </div>
+        
+        <footer>
+            <p>Built by Mutshidzi</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
