@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    padding: 40px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.2em;
+}
+
+p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="email"],
+input[type="url"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="url"]:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: #667eea;
+    font-weight: 600;
+}
+
+.results {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    border-left: 4px solid #28a745;
+}
+
+.results h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#responseContent {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-family: 'Courier New', monospace;
+    word-break: break-all;
+}
+
+.error {
+    border-left-color: #dc3545 !important;
+}
+
+.error #responseContent {
+    color: #dc3545;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    color: #666;
+    font-size: 14px;
+}
